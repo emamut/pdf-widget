@@ -1,0 +1,19 @@
+{
+  "name": "pdf-widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --proxy http://localhost/workspace/wp-test --files \".\" --ignore \".git\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emamut-net/pdf-widget.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emamut-net/pdf-widget/issues"
+  },
+  "homepage": "https://github.com/emamut-net/pdf-widget#readme"
+}

@@ -10,7 +10,7 @@ License: GPL2
 */
 
 // The widget class
-class My_Custom_Widget extends WP_Widget {
+class PDF_Widget extends WP_Widget {
 
 	// Main constructor
 	public function __construct() {
@@ -36,6 +36,6 @@ class My_Custom_Widget extends WP_Widget {
 
 // Register the widget
 function my_register_custom_widget() {
-	register_widget( 'My_Custom_Widget' );
+	register_widget( 'PDF_Widget' );
 }
 add_action( 'widgets_init', 'my_register_custom_widget' );

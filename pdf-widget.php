@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: PDF Widget
-Plugin URI: http://URI_Of_Page_Describing_Plugin_and_Updates
+Plugin URI: https://github.com/emamut-net/pdf-widget
 Description: Simple PDF widget viewer
 Version: 1.0
 Author: emamut

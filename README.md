@@ -1,3 +1,3 @@
 # PDF Viewer
 
-A simple PDF viewer
+A simple Wordpress PDF widget

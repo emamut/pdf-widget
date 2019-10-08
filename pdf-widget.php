@@ -2,7 +2,7 @@
 /*
 Plugin Name: PDF Widget
 Plugin URI: https://github.com/emamut-net/pdf-widget
-Description: Simple PDF widget viewer
+Description: Simple PDF viewer widget
 Version: 1.0
 Author: emamut
 Author URI: https://emamut.net

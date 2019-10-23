@@ -29,7 +29,8 @@ public function form( $instance ) {
   // Set widget defaults
   $defaults = array(
     'title'    => '',
-    'text'     => ''
+    'text'     => '',
+    'height'     => ''
   );
 
   // Parse current settings with defaults
@@ -46,6 +47,12 @@ public function form( $instance ) {
     <label for="<?php echo esc_attr( $this->get_field_id( 'text' ) ); ?>"><?php _e( 'URL:', 'text_domain' ); ?></label>
     <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'text' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'text' ) ); ?>" type="text" value="<?php echo esc_attr( $text ); ?>" />
   </p>
+
+  <?php // Text Field ?>
+  <p>
+    <label for="<?php echo esc_attr( $this->get_field_id( 'height' ) ); ?>"><?php _e( 'Height:', 'text_domain' ); ?></label>
+    <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'height' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'height' ) ); ?>" type="text" value="<?php echo esc_attr( $height ); ?>" />
+  </p>
   <?php }
 
   // Update widget settings
@@ -53,6 +60,7 @@ public function form( $instance ) {
     $instance = $old_instance;
     $instance['title']    = isset( $new_instance['title'] ) ? wp_strip_all_tags( $new_instance['title'] ) : '';
     $instance['text']     = isset( $new_instance['text'] ) ? wp_strip_all_tags( $new_instance['text'] ) : '';
+    $instance['height']     = isset( $new_instance['height'] ) ? wp_strip_all_tags( $new_instance['height'] ) : '';
 
     return $instance;
   }
@@ -65,6 +73,7 @@ public function form( $instance ) {
     // Check the widget options
     $title    = isset( $instance['title'] ) ? apply_filters( 'widget_title', $instance['title'] ) : '';
     $text     = isset( $instance['text'] ) ? $instance['text'] : '';
+    $height    = isset( $instance['height'] ) ? $instance['height'] : '';
 
     // WordPress core before_widget hook (always include )
     echo $before_widget;
@@ -79,7 +88,7 @@ public function form( $instance ) {
 
       // Display text field
       if ( $text ) {
-        echo '<iframe src="https://docs.google.com/viewer?url=' . $text . '&embedded=true" style="width:600px; height:350px;" frameborder="0"></iframe>';
+        echo '<iframe src="https://docs.google.com/viewer?url=' . $text . '&embedded=true" style="width:100%; height:' . $height . ';" frameborder="0"></iframe>';
       }
 
     // WordPress core after_widget hook (always include )

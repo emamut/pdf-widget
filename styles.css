@@ -1,0 +1,9 @@
+#pdf-widget-container {
+  position: relative;
+}
+
+#pdf-widget-container #link {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

@@ -30,3 +30,8 @@ Upload the PDF Widget plugin to your blog, Activate it, then in Widget section e
 
 * Get PDF from external URL
 * Starts with Google Drive PDF viewer
+
+== Credits ==
+
+* [PDFObject](https://pdfobject.com/)
+* [FontAwesome](https://fontawesome.com/)

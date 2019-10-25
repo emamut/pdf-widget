@@ -26,11 +26,11 @@ class PDF_Widget extends WP_Widget
 
     add_action( 'wp_enqueue_scripts', 'my_custom_script_load' );
     function my_custom_script_load(){
-      wp_enqueue_style( 'fontawesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
-      wp_enqueue_style( 'styles', plugins_url('/styles.css', __FILE__) );
+      wp_enqueue_style( 'fontawesome', plugins_url('fontawesome/css/font-awesome.min.css', __FILE__) );
+      wp_enqueue_style( 'styles', plugins_url('styles.css', __FILE__) );
 
-      wp_enqueue_script( 'pdfobject', '//cdnjs.cloudflare.com/ajax/libs/pdfobject/2.1.1/pdfobject.min.js', array( 'jquery' ) );
-      wp_enqueue_script( 'app', plugin_dir_url( __FILE__ ) . 'app.js', array( 'jquery' ) );
+      wp_enqueue_script( 'pdfobject', plugin_dir_url( __FILE__ ) . 'js/pdfobject.min.js', array( 'jquery' ) );
+      wp_enqueue_script( 'app', plugin_dir_url( __FILE__ ) . 'js/app.js', array( 'jquery' ) );
     };
   }
 

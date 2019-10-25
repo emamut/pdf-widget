@@ -3,10 +3,10 @@
 Plugin Name: PDF Widget
 Plugin URI: https://github.com/emamut-net/pdf-widget
 Description: Simple PDF viewer widget
-Version: 1.0
+Version: 2.0
 Author: emamut
 Author URI: https://emamut.net
-License: GPL2
+License: GPL2 or later
 */
 
 // The widget class
